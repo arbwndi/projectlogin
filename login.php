@@ -13,9 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = $_POST['password'] ?? '';
 
     // Login sederhana (username: admin, password: 123)
-    if ($username == 'admin' && $password === '123') {
+    if ($username == 'arimbi' && $password === '12345') {
         $_SESSION['username'] = $username;
-        $_SESSION['role'] = 'Dosen';
+        $_SESSION['role'] = 'Pegawai';
         header("Location: dashboard.php");
         exit;
     } else {
